@@ -61,17 +61,23 @@ if (isset($_POST['submit'])) {
     <title>Contact Us</title>
 </head>
 <body>
+
 <div class="container mt-5">
-    <!-- Profile Card -->
-    <div class="row justify-content-center mb-4">
+    <!-- Profile Header Section -->
+    <div class="row justify-content-center mb-5">
         <div class="col-md-4">
-            <div class="card shadow-lg border-0">
+            <div class="card shadow-lg border-0 text-center rounded">
                 <a href="profile.php">
-                    <img src="asset/img/KFK.jpg" class="card-img-top rounded" alt="Profile Image">
+                    <img src="asset/img/KFK.jpg" class="card-img-top rounded-circle" alt="Profile Image">
                 </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">Krisna Satya Arisandy</h5>
-                    <p class="card-text">Owner</p>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Krisna Satya Arisandy</h5>
+                    <p class="card-text text-muted">Owner | Digital Artist</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/ksarain17" class="btn btn-warning btn-sm" target="_blank">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,26 +86,77 @@ if (isset($_POST['submit'])) {
     <!-- Professional Profile Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-md-16">
-            <div class="p-4 rounded" style="background-color: #2c3e50; color: white;">
-                <h3 class="text-uppercase text-warning">Professional Profile</h3>
-                <h2 class="mb-3">Krisna Satya Arisandy</h2>
-                <p><strong>Job Title:</strong> Owner</p>
-                <p><strong>Email:</strong> krisnasatyaarisandy@gmail.com</p>
-                <p><strong>Phone:</strong> +62 857-5583-6281</p>
-                <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/ksarain17" class="text-warning">linkedin.com/in/krisnasatyaarisandy</a></p>
-                <p><strong>Skills:</strong></p>
-                <ul style="list-style-type: disc; padding-left: 20px;">
-                    <li>Digital Painting</li>
-                    <li>Profesional Artist</li>
-                    <li>etc</li>
+            <div class="p-4 rounded shadow-lg" style="background-color: #34495e; color: white;">
+                <h3 class="text-uppercase text-warning text-center mb-4">Professional Profile</h3>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <h5 class="text-light">Personal Information</h5>
+                        <p><strong>Job Title:</strong> Owner</p>
+                        <p><strong>Email:</strong> <a href="mailto:krisnasatyaarisandy@gmail.com" class="text-warning">krisnasatyaarisandy@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-light">Contact</h5>
+                        <p><strong>Phone:</strong> +62 857-5583-6281</p>
+                        <p><strong>Location:</strong> Jakarta, Indonesia</p>
+                    </div>
+                </div>
+
+                <hr class="my-4" style="border-color: #ecf0f1;">
+
+                <!-- Skills Section -->
+                <h5 class="text-light">Skills</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-warning"></i> Digital Painting</li>
+                    <li><i class="bi bi-check-circle-fill text-warning"></i> Professional Artist</li>
+                    <li><i class="bi bi-check-circle-fill text-warning"></i> Graphic Design & Illustration</li>
+                    <li><i class="bi bi-check-circle-fill text-warning"></i> Branding & Visual Identity</li>
+                    <li><i class="bi bi-check-circle-fill text-warning"></i> Concept Art & Storyboarding</li>
                 </ul>
+
+                <!-- About Me Section -->
+                <div class="mt-4">
+                    <h5 class="text-light">About Me</h5>
+                    <p id="bio" class="collapse">
+                        I am a passionate digital artist with over 10 years of experience creating stunning visual art, including digital paintings, concept art, and branding designs. My journey started with traditional art, but I transitioned into digital art as technology evolved, and it has since become my primary medium. I continue to explore new techniques and push the boundaries of my craft.
+                    </p>
+                    <button class="btn btn-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bio" aria-expanded="false" aria-controls="bio">
+                        <i class="bi bi-arrow-down-circle"></i> Read More
+                    </button>
+                </div>
+
+                <hr class="my-4" style="border-color: #ecf0f1;">
+
+                <!-- Achievements Section -->
+                <h5 class="text-light">Achievements</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="achievement-box">
+                            <h4 class="text-warning">500+</h4>
+                            <p>Digital Paintings Completed</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="achievement-box">
+                            <h4 class="text-warning">10+</h4>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="achievement-box">
+                            <h4 class="text-warning">100+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Contact Form -->
     <div class="row justify-content-center">
-        <div class="col-md-16">
+        <div class="col-md-10">
             <div class="p-4 shadow-lg rounded bg-white">
                 <h3 class="text-center text-dark mb-4">Leave a Message</h3>
 

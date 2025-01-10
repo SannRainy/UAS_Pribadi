@@ -16,10 +16,13 @@
    <section class="who-we-are bg-dark text-white py-5">
       <div class="container">
          <div class="row align-items-center">
+         <div class="col-lg-6 order-lg-2">
+      <img src="asset/img/d46bc-17364022503465-1920.avif" alt="Side Image" class="img-fluid rounded shadow-lg">
+   </div>
             <div class="col-lg-6 text-start">
                <p class="fs-4 mb-3">Who we Are</p>
                <h1 class="display-4 fw-bold">Artists<br>Who Love The World Of Gallery Art</h1>
-               <p class="mt-3">Sebuah karya seni berarti jika keindahannya sudah diakui oleh hati<br>Alternative Fanarts</p>
+               <p class="mt-3">Sebuah karya seni berarti jika keindahannya sudah diakui oleh hati</p>
             </div>
          </div>
       </div>

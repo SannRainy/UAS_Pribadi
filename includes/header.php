@@ -40,11 +40,12 @@ if (!isset($_SESSION["username"])) {
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../gallery.php"><strong>Gallery</strong></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../profile.php"><strong>Profile</strong></a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../upload.php"><strong>Upload</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../profile.php"><strong>Gallery Management</strong></a><!-- Gallery Management -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="../contactus.php"><strong>Contact Us</strong></a>
@@ -65,15 +66,16 @@ if (!isset($_SESSION["username"])) {
     <video autoplay muted loop class="video-background" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0; filter: grayscale(100%);">
         <source src="asset/video/bocchi-the-rock-chibi-moewalls-com.mp4" type="video/mp4">
     </video>
-    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(141, 137, 137, 0.5); z-index: 1;"></div>
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(107, 104, 104, 0.5); z-index: 1;"></div>
 </div>
 
 
-    <div class="text-overlay" style="position: absolute; z-index: 1; color: white; top: 50%; left: 10%;">
-        <p style="font-size: 1.5rem; margin: 0;">ART COLLECTION</p>
-        <h1 style="font-size: 2.5rem; font-weight: bold; margin: 0;"><h1>Selamat Datang di Dashboard @<?= $_SESSION["username"]?>
+<div class="text-overlay" style="position: absolute; z-index: 1; color: white; top: 40%; left: 10%; font-family: 'Roboto', sans-serif;">
+        <p style="font-size: 1.25rem; margin: 0; font-weight: 500;">ART COLLECTION</p>
+        <h1 style="font-size: 2rem; font-weight: 700; margin: 0; text-transform: uppercase;">
+            Selamat Datang di Dashboard @<?= $_SESSION["username"] ?>
+        </h1>
     </div>
-</div>
 
 </header>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoFfS1DhsbEl8s1Ot6VRXCAeDl6UJImQeMpG7ljktBl4J6L" crossorigin="anonymous"></script>
