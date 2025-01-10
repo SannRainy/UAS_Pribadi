@@ -30,7 +30,7 @@
       <div class="container">
          <div class="row align-items-center">
             <div class="col-lg-6">
-               <img src="asset/img/KFK.jpg" alt="Side Image" class="img-fluid rounded shadow-lg">
+               <img src="asset/img/d46bc-17364022503465-1920.avif" alt="Side Image" class="img-fluid rounded shadow-lg">
             </div>
             <div class="col-lg-6 text-start">
                <h1 class="display-5 fw-bold mb-3">Suasana yang<br>Tenang</h1>
