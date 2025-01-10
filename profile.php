@@ -41,7 +41,7 @@ $images = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
     <div class="gallery-section">
-        <h1>Image Management</h1>
+        <h1 class= "text-center my-5 text-shadow ">Image Management</h1>
         <div class="image-grid">
             <?php foreach ($images as $image): ?>
                 <div class="image-card">
