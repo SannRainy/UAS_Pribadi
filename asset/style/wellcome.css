@@ -1,0 +1,60 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Unordered list styling */
+nav ul {
+    list-style: none;
+}
+
+/* List item styling */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Link styling */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Link hover effect */
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav {
+        padding: 15px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,25 @@
+.card:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+
+.card .card-img-top {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+.card{
+    transition: transform 0.4s ease-in-out;
+}
+
+.card-text{
+    color: rgb(0, 0, 0);
+}
+
+.card img {
+    cursor: pointer;
+}
