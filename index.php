@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include "wellcome.php"?>
+    <?php include "login.php"?>
 
 </body>
 </html>

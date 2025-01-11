@@ -20,12 +20,12 @@ if (!isset($_SESSION["username"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/style/header.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5hb7xvEv+MCeI6UJIFK7/sy6Te/XImsaGoAX1Y" crossorigin="anonymous">
+    
     <title>Web Pribadi</title>
 </head>
 <body>
 <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100" style="top: 0;">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100" style="top: 0;">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">Gallery Of Art</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -47,7 +47,6 @@ if (!isset($_SESSION["username"])) {
             </div>
         </div>
     </nav>
-
     <!-- Background Video with Text -->
     <div class="bg-img" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
     <video autoplay muted loop class="video-background" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0; filter: grayscale(100%);">
@@ -63,5 +62,5 @@ if (!isset($_SESSION["username"])) {
 </header>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+</bod>
 </html>

@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
         <div class="col-md-4">
             <div class="card shadow-lg border-0 text-center rounded">
                 <a href="profile.php">
-                    <img src="asset/img/KFK.jpg" class="card-img-top rounded-circle" alt="Profile Image">
+                    <img src="asset/img/MM-3MM3 '036.JPG" class="card-img-top rounded-circle" alt="Profile Image">
                 </a>
                 <div class="card-body">
                     <h5 class="card-title text-primary">Krisna Satya Arisandy</h5>

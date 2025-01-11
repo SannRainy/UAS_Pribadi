@@ -42,11 +42,21 @@
 
 /* Hover Effect on Image */
 .side-bg:hover .side-img img {
-    transform: translate(-50%, -50%) scale(1.1); /* Zoom in effect */
+    transform: translate(-50%, -50%) scale(1.1);
+     /* Zoom in effect */
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+    -moz-transform: translate(-50%, -50%) scale(1.1);
+    -ms-transform: translate(-50%, -50%) scale(1.1);
+    -o-transform: translate(-50%, -50%) scale(1.1);
 }
 
 .d-flex:hover .side-bg {
-    transform: scale(1.05); /* Slightly scale up the background on hover */
+    transform: scale(1.05);
+    /*Slightlyscaleupthebackgroundonhover*/
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 /* Title and Cards Section */
