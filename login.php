@@ -2,11 +2,11 @@
 include 'includes/db.php';
 session_start();
 
-    $login_message = "";
-    if(isset($_SESSION["is_login"])){
-        header("location: home.php");
-    }
-
+$login_message = "";
+if (isset($_SESSION["is_login"])) {
+    header("location: home.php");
+    exit();
+}
 
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
@@ -14,29 +14,30 @@ if (isset($_POST['login'])) {
 
     $pdo = pdo_connect_mysql();
 
-    
     $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
-    $stmt->bindParam("username", $username);
+    $stmt->bindParam(":username", $username);
     $stmt->execute();
 
-
-    
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($user) {
-        
         if ($password === $user['password']) {
-            echo "Login Berhasil";
             $_SESSION["username"] = $user["username"];
             $_SESSION["is_login"] = true;
-            header("location: home.php");
-            
-            
+
+            // Check if the username is "admin"
+            if ($username === "admin") {
+                $_SESSION["is_admin"] = true; // Set a session for admin
+                header("location: admin.php");
+            } else {
+                header("location: home.php");
+            }
+            exit();
         } else {
-            echo "Password salah";
+            $login_message = "Password salah.";
         }
     } else {
-        echo "Akun tidak ditemukan";
+        $login_message = "Akun tidak ditemukan.";
     }
 }
 ?>
@@ -50,17 +51,19 @@ if (isset($_POST['login'])) {
 </head>
 <body>
     <div class="login-container">
-    <h3>Login Akun</h3> 
-    <form action="login.php" method="POST">
-        <input type="text" placeholder="username" name="username"/>
-        <input type="password" placeholder="password" name="password"/>
-        <button type="submit" name="login">Masuk sekarang</button>
-    </form>
+        <h3>Login Akun</h3>
+        <?php if ($login_message): ?>
+            <div class="alert"><?= htmlspecialchars($login_message) ?></div>
+        <?php endif; ?>
+        <form action="login.php" method="POST">
+            <input type="text" placeholder="Username" name="username" required />
+            <input type="password" placeholder="Password" name="password" required />
+            <button type="submit" name="login">Masuk sekarang</button>
+        </form>
     </div>
     <div class="button-container">
-    <a href="register.php" class="button">Kembali ke registrasi</a>
-</div>
-
+        <a href="register.php" class="button">Kembali ke registrasi</a>
+    </div>
 </body>
 </html>
 <?php include 'includes/footer.php'; ?>

@@ -58,13 +58,15 @@ input[type="text"]:hover {
     background-color: #357ABD;
 }
 
-.preview {
+.image-preview {
     margin-top: 20px;
     font-family: 'Arial', sans-serif;
     text-align: center;
 }
 
-.preview img {
+.image-preview img {
     max-width: 100%;
     border-radius: 8px;
 }
+
+

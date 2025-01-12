@@ -48,12 +48,14 @@ if (isset($_POST["submit"])) {
 </head>
 
 <body>
-    <div class="container my-5">
+<div class="container my-5">
         <h1 class="text-center mb-4">Upload Your Image</h1>
         <form action="upload.php" method="post" enctype="multipart/form-data" class="mb-4">
             <div class="mb-3">
                 <label for="image" class="form-label">Choose an image:</label>
-                <input type="file" id="image" name="image" accept="image/*" required class="form-control">
+                <input type="file" id="image" name="image" accept="image/*" required class="form-control" onchange="previewImage(event)">
+                <!-- Preview image container -->
+                <img id="preview" class="image-preview" alt="Image Preview">
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Description:</label>
@@ -117,6 +119,22 @@ if (isset($_POST["submit"])) {
             </tbody>
         </table>
     </div>
+    
+    <script>
+        function previewImage(event) {
+            const input = event.target;
+            const preview = document.getElementById('preview');
+
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block'; // Show the preview image
+                };
+                reader.readAsDataURL(input.files[0]); // Read the selected file
+            }
+        }
+    </script>
 </body>
 
 <?php include 'includes/footer.php'; ?>

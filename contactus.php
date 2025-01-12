@@ -62,30 +62,39 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
 
-<div class="container mt-5">
-    <!-- Profile Header Section -->
-    <div class="row justify-content-center mb-5">
-        <div class="col-md-4">
-            <div class="card shadow-lg border-0 text-center rounded">
-                <a href="profile.php">
-                    <img src="asset/img/MM-3MM3 '036.JPG" class="card-img-top rounded-circle" alt="Profile Image">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title text-primary">Krisna Satya Arisandy</h5>
-                    <p class="card-text text-muted">Owner | Digital Artist</p>
-                    <div class="d-flex justify-content-center">
-                        <a href="https://www.linkedin.com/in/ksarain17" class="btn btn-warning btn-sm" target="_blank">
-                            <i class="bi bi-linkedin"></i> LinkedIn
-                        </a>
-                    </div>
+<div class="container container-fluid d-flex flex-column align-items-center">
+    <!-- Title Text -->
+    
+    <!-- Single Card Container -->
+    <div class="Card-container container-fluid d-flex justify-content-center align-items-center" style="padding-top: 5rem;">
+        <div class="card" 
+             style="width: 15rem; height: auto; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid #ccc; border-radius: 5px; padding: 1rem; background-color: #f8f9fa;">
+            <!-- Profile Image -->
+            <img src="asset/img/satya.gif" 
+                 alt="Profile Image" 
+                 style="width: 100%; height: auto; max-height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
+            
+            <!-- Profile Details -->
+            <div class="card-body" style="text-align: center; padding: 1rem;">
+                <h5 class="card-title" style="font-weight: bold;">Krisna Satya Arisandy</h5>
+                <p class="card-text text-muted">Owner | Digital Artist</p>
+                <!-- LinkedIn Button -->
+                <div class="d-flex justify-content-center mb-3">
+                    <a href="https://www.linkedin.com/in/ksarain17" 
+                       class="btn btn-warning btn-sm" 
+                       target="_blank" 
+                       style="font-size: 0.85rem;">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Professional Profile Section -->
     <div class="row justify-content-center mb-5">
-        <div class="col-md-16">
+        <div class="col-md-10">
             <div class="p-4 rounded shadow-lg" style="background-color: #34495e; color: white;">
                 <h3 class="text-uppercase text-warning text-center mb-4">Professional Profile</h3>
 
